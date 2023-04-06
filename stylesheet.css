@@ -1,0 +1,84 @@
+body{
+	background-color:rgb(28,28,29);
+	margin:0px;
+	font-family:monospace;
+	font-size:20px;
+	
+	
+}
+
+p{
+	padding:8px;
+}
+
+h2{
+	padding:8px;
+	color:white;
+}
+
+h3{
+	padding:8px;
+}
+
+.selection{
+	
+	flex:30%;
+	text-align:center;
+}
+
+#header{
+	text-align:center;
+	padding:5px;
+	color:white;
+}
+
+#navigator{
+	
+	display:flex;
+	margin:3px auto;
+	width:90%;
+	background-color:rgb(50,50,50);
+	overflow:anywhere;
+	
+	font-size:14px;
+	color:rgb(150,150,150);
+	
+}
+
+#main{
+	margin:3px auto;
+	width:90%;
+	background-color:rgb(50,50,50);
+	overflow:auto;
+	margin-top:10px;
+	margin-bottom:40px;
+
+	font-size:14px;
+	color:rgb(150,150,150);
+}
+
+#headshot{
+	position:relative;
+	width:300px;
+	float:right;
+	margin:10px;
+}
+
+.projVideo{
+	position:relative;
+	float:right;
+	margin:10px;
+	padding-top:8px;
+}
+
+.projDiv{
+	overflow:auto;
+}
+
+
+
+
+
+
+
+	

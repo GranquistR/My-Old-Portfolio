@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+	
+		<meta charset="utf-8">
+		<title>Ryan's Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+	</head>
+
+	<body>
+
+		<div id ="header">
+		
+			<h1>Ryan Granquist</h1>
+			
+			<h2>Software Developer</h2>
+		
+		</div>
+		
+		<div id = "navigator">
+		
+			<div class = "selection" id = "selectHome" >
+				<p>Home</p>
+			</div>
+			
+			<div class = "selection" id = "selectProj">
+				<p>Personal Projects</p>
+			</div>
+			
+			<div class = "selection" id = "selectCont" style = "border:solid white 1px;">
+				<p>Contacts</p>
+			</div>
+		
+		</div>
+		
+		<script>
+			
+			var selected = 1;
+			
+			var homeButton = document.getElementById("selectHome")
+			homeButton.onclick = function() 
+			{
+				window.location.replace("./homePage.html");
+			}
+			
+			var projButton = document.getElementById("selectProj")
+			projButton.onclick = function() 
+			{
+				window.location.replace("./projPage.html");
+			}
+			
+			var contButton = document.getElementById("selectCont")
+			contButton.onclick = function() 
+			{
+				window.location.replace("./contPage.html");
+			}
+			
+		</script>
+
+		<div id ="main">
+
+			<h2>Contact me</h2>
+			
+			<h3>Email: granquistr7820@my.uwstout.edu</h3>
+			
+			<h2>My Links</h2>
+			
+			
+			<h3><a href="./RESUMEmarch2023.pdf" download style = "color:gray;" target="_blank">My Resume</a></h3>
+			<h3><a target = "_blank" href="https://www.linkedin.com/in/ryan-granquist-3767a3213/" style = "color:gray;">LinkedIn</a></h3>
+			<h3><a target = "_blank" href="https://app.joinhandshake.com/stu/users/34912677" style = "color:gray;">HandShake</a></h3>
+
+		</div>
+		
+	</body>
+	
+</html>

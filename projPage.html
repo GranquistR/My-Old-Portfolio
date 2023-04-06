@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+	
+		<meta charset="utf-8">
+		<title>Ryan's Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+	</head>
+
+	<body>
+
+		<div id ="header">
+		
+			<h1>Ryan Granquist</h1>
+			
+			<h2>Software Developer</h2>
+		
+		</div>
+		
+		<div id = "navigator">
+		
+			<div class = "selection" id = "selectHome">
+				<p>Home</p>
+			</div>
+			
+			<div class = "selection" id = "selectProj" style = "border:solid white 1px;">
+				<p>Personal Projects</p>
+			</div>
+			
+			<div class = "selection" id = "selectCont">
+				<p>Contacts</p>
+			</div>
+		
+		</div>
+		
+		<script>
+			
+			
+			
+			var homeButton = document.getElementById("selectHome")
+			homeButton.onclick = function() 
+			{
+				window.location.replace("./homePage.html");
+			}
+			
+			var projButton = document.getElementById("selectProj")
+			projButton.onclick = function() 
+			{
+				window.location.replace("./projPage.html");
+			}
+			
+			var contButton = document.getElementById("selectCont")
+			contButton.onclick = function() 
+			{
+				window.location.replace("./contPage.html");
+
+			}
+			
+			
+		</script>
+
+		<div id ="main">
+		
+			
+		
+			
+			
+			
+			
+			<div class = "projDiv">
+				<span class = "projVideo">
+					<iframe width="420" height="315"
+						src="https://www.youtube.com/embed/2Kzbwvn1YNU?controls=1">
+					</iframe>
+				</span>
+				
+				<h2>Particle Simulations with Cellular Automata</h2>
+				
+				<p>This project was coded from scratch with <span style = "color:orange;">Java</span> in the <span style = "color:orange;">Eclipes IDE</span> using the Java Swing library for it's graphics. 
+				My goal for this personal project was to create a particle simulation sandbox game with realistic interactions betweeen a various different elements. 
+				I accomplished what you see in the video using a modified version of the "<em><span style = "color:white;">Conway's Game of Life</span></em>" where 
+				the state of any tile each update is determinded by the state of it's neighbors. As an example, a yellow tile represents sand. Each update a sand 
+				tile will first check if the tile below it is empty, if so it updates it self to swap it's state with the tile below. Additional rules can be applied 
+				such as 'If the tile below is also sand, try falling randomly to the left or right'. Very simple rules such as these, while simple in concept, can 
+				cause a number of different patterns to emerge, and in this case, it does a good job of simulating particles in a 2D plane <span style="color:white">in real time</span>.</p>
+				
+			</div>
+			
+			<div class = "projDiv">
+				<span class = "projVideo">
+					<iframe width="420" height="315"
+						<img src="placeholder.jpg" alt="My completed portfolio website" width="420">
+					</iframe>
+				</span>
+				
+				<h2>Survive the Hoard!</h2>
+				
+				<p>This project, similar to the project above, was coded in <span style = "color:orange;">Java</span> with the <span style = "color:orange;">Eclipes IDE</span>. This projected initially started as a test to see how I could go about
+				simulating a large number of complex moving entities and it ended up turning into an arcade style 'survive the hoard' style game. Starting the game you are pursued by a small number of green square(or zombies) and it is your task to avade and defeat the zombies
+				to earn coins and survive as long as you can. The twist is that the numbers of enemies around you increases at an exponential rate and you must fight to survive.</p>
+				
+				<p> 
+				Managing the memory of the an infinitely expanding hoard of simulated entites was the main challenge of this project. I settled with an array
+				that would recyle defeated enemies back into the pool of enemies to be spawned. This achieved the desired goal of creating the appearance of a never-ending
+				and increasingly dense hoard endlessly pursing you with only a finite amount of memory being used. This game is what showed me the power of <span style="color:white;">Object Oriented Programming</span> 
+				as I was easily able to reuse the same sections of code from the enemy entities for making the coin entities that similarly needed to appear in large amounts and without end all while using the least amount of memory.
+				</p>
+			</div>
+			
+			<div class = "projDiv">
+				
+				
+				<h2>This website</h2>
+				
+				<p>The very website that you are browsing was was coded HTML, CSS, and JavaScript all in Notepad++. You can use CTRL + SHIFT + i on some browers to check out my code yourself!</p>
+			</div>
+			
+			
+			
+		
+			
+			
+			
+			
+			
+		</div>
+		
+		
+	
+	
+	</body>
+	
+</html>
