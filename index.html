@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+	
+		<meta charset="utf-8">
+		<title>Ryan's Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+	</head>
+
+	<body>
+
+		<div id ="header">
+		
+			<h1>Ryan Granquist</h1>
+			
+			<h2>Software Developer</h2>
+		
+		</div>
+		
+		<div id = "navigator">
+		
+			<div class = "selection" id = "selectHome" style = "border:solid white 1px;">
+				<p>Home</p>
+			</div>
+			
+			<div class = "selection" id = "selectProj">
+				<p>Personal Projects</p>
+			</div>
+			
+			<div class = "selection" id = "selectCont">
+				<p>Contacts</p>
+			</div>
+		
+		</div>
+		
+		<script>
+			
+			var selected = 1;
+			
+			var homeButton = document.getElementById("selectHome")
+			homeButton.onclick = function() 
+			{
+				window.location.replace("./homePage.html");
+			}
+			
+			var projButton = document.getElementById("selectProj")
+			projButton.onclick = function() 
+			{
+				window.location.replace("./projPage.html");
+			}
+			
+			var contButton = document.getElementById("selectCont")
+			contButton.onclick = function() 
+			{
+				window.location.replace("./contPage.html");
+
+			}
+			
+			
+			
+			
+			
+			
+		</script>
+
+		<div id ="main">
+		
+			<span>
+			<img src="Headshot.jpg" alt="Me in Apache Junction, Arizona" id="headshot">
+			</span>
+		
+			<h2>Hello, world!</h2>
+		
+			<p>
+			I am Ryan Granquist and this portfolio is a representation of 
+			who I am and is a display of all the things I am proud to have learned and accomplished so far.
+			I am currently a sophmore at UW-Stout pursuing a careeer in Cyber 
+			Security and Secure Software Development. On this website you can my resume, 
+			some side projects that interest me, and more info about me.
+			</p>
+			
+			<p>
+			
+				At my current position as a Helpdesk Technichian and PC-Repairman at the UW-Stout helpdesk, I am responsible for providing tech support solutions and quality customer service to UW-Stout Students and Faculty at the Stout Technology Helpdesk. Services include troubleshooting software and hardware issues in Faculty offices or classrooms, offering reimage services, and managing the secure disposal of surplus school devices.
+			
+			</p>
+			
+			
+			
+			
+		</div>
+		
+		
+		
+		
+	
+	</body>
+	
+</html>
